@@ -1,0 +1,105 @@
+    /*Defines the appearance of elements in the body tag*/
+    body
+    {
+      font:10px sans-serif;
+      color: white;
+      background-color: #22262F;
+
+    }
+
+    /*Defines the appearance of the output line for India in the graph*/
+    .line1
+    {
+      stroke:#59B0F3;
+      fill:none;
+      stroke-width: 1.5px;
+    }
+
+    /*Defines the appearance of the output line for USA in the graph*/    
+    .line2
+    {
+      stroke:#2AEAC1;
+      fill:none;
+      stroke-width: 1.5px;
+    }
+
+    /*Defines the thin black lines that make up the X and Y axes*/
+    .domain { 
+      fill: none; 
+      stroke: none; 
+      stroke-width: 1; 
+    } 
+
+    /*Makes the X and Y axis markings visible*/
+    .tick
+    {
+      stroke:white;
+      font-family: Segoe UI Light;
+      letter-spacing: 1px;
+    }
+
+    /*Defines the hover action for points on the graph*/
+    .dot:hover
+    {
+      stroke:black;
+    }
+
+    /*CSS for the tooltips*/
+    .d3-tip 
+    {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 2px;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after 
+    {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after
+    {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+
+    /*CSS for the SVG*/
+    svg
+    {
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 40px;
+    }
+
+    /*White color font*/
+    text.whiteFont
+    {
+      color: white;
+      stroke:white;
+      font-family: Segoe UI Light;
+      letter-spacing: 2px;
+      stroke-opacity: 0.4;
+    }
+
+    /*Styles for the graph's heading*/
+    text.whiteHeader
+    {
+      color: white;
+      stroke:white;
+      font-family: Segoe UI Light;
+      letter-spacing: 2px;
+    }
